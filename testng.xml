@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RetryfailedTestSuite" verbose="1">
+
+	<!-- How will you provide retry logic interview q ans is listener -->
+
+	<listeners>
+		<listener class-name="analyser.MyTransformer" />
+	</listeners>
+
+	<test name="RetryMultipleFailedTestCases">
+
+		<classes>
+			<class name="mytests.MyTest" />
+
+		</classes>
+	</test>
+</suite>
